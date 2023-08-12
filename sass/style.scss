@@ -1,0 +1,52 @@
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+
+// color
+$bg-skin: #fbf2f2;
+$primary-red: #aa0601;
+$dark-red: #650300;
+
+html,
+body {
+  width: 100vw;
+}
+
+.container {
+  max-width: 1296px;
+}
+
+header {
+  width: 100%;
+  background-color: $primary-red;
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  width: 80px;
+  height: 48px;
+  overflow: hidden;
+
+  img {
+    width: 80px;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 0 24px;
+
+  a {
+    color: #fff;
+    font-size: 20px;
+  }
+}
+
+.banner {
+  background: url("../images/home/home-header.png");
+}
