@@ -1,0 +1,36 @@
+footer {
+  background-color: #aa0601;
+  color: white;
+  padding: 60px 0 21px;
+  nav {
+    display: flex;
+    gap: 48px;
+    a {
+      color: white;
+    }
+  }
+  .contact-info {
+    margin-top: 36px;
+    line-height: 54px;
+    font-size: 36px;
+    gap: 8px;
+  }
+  .copyright {
+    border-top: 1px solid white;
+    padding-top: 32px;
+    margin-top: 32px;
+    display: flex;
+    span {
+      &:first-child {
+        flex-grow: 1;
+      }
+      &:not(:first-child) {
+        line-height: 21px;
+        font-size: 14px;
+      }
+      &:last-child {
+        margin-left: 48px;
+      }
+    }
+  }
+}
