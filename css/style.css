@@ -147,56 +147,6 @@ button {
   overflow: visible;
 }
 
-footer {
-  background-color: #aa0601;
-  color: white;
-  padding: 60px 0 20px;
-}
-footer .footer-container {
-  max-width: 1296px;
-  margin: auto;
-}
-footer nav {
-  display: flex;
-  gap: 48px;
-}
-footer nav a {
-  color: white;
-}
-footer nav .icon {
-  margin-left: auto;
-  display: flex;
-  gap: 32px;
-}
-footer .contact-info {
-  margin-top: 36px;
-  line-height: 54px;
-  font-size: 36px;
-  gap: 8px;
-}
-footer .contact-info img {
-  vertical-align: middle;
-}
-footer .contact-info span {
-  margin-left: 20px;
-}
-footer .copyright {
-  border-top: 1px solid white;
-  padding-top: 32px;
-  margin-top: 32px;
-  display: flex;
-}
-footer .copyright span:first-child {
-  flex-grow: 1;
-}
-footer .copyright span:not(:first-child) {
-  line-height: 21px;
-  font-size: 14px;
-}
-footer .copyright span:last-child {
-  margin-left: 48px;
-}
-
 .contact {
   background: #fbf2f2;
 }
@@ -323,6 +273,143 @@ footer .copyright span:last-child {
   font-size: 48px;
   font-weight: 900;
   font-style: italic;
+}
+
+footer {
+  background-color: #aa0601;
+  color: white;
+  padding: 60px 0 32px;
+}
+footer .footer-container {
+  max-width: 1296px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1919px) {
+  footer {
+    padding: 60px 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 24px 14px;
+  }
+}
+footer nav ul {
+  display: flex;
+  gap: 48px;
+  line-height: 48px;
+}
+@media (max-width: 1919px) {
+  footer nav ul {
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  footer nav ul {
+    display: none;
+  }
+}
+footer nav ul a {
+  color: white;
+}
+footer .icon {
+  margin-left: auto;
+  display: flex;
+  gap: 32px;
+}
+@media (max-width: 767px) {
+  footer .icon {
+    gap: 16px;
+  }
+}
+footer .icon img {
+  width: 48px;
+}
+@media (max-width: 1919px) {
+  footer .icon img {
+    width: 40px;
+  }
+}
+@media (max-width: 767px) {
+  footer .icon img {
+    width: 24px;
+  }
+}
+footer .contact-info ul {
+  margin-top: 36px;
+  line-height: 54px;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 767px) {
+  footer .contact-info ul {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    gap: 8px;
+  }
+}
+footer .contact-info ul img {
+  vertical-align: middle;
+  width: 40px;
+}
+@media (max-width: 767px) {
+  footer .contact-info ul img {
+    width: 16px;
+  }
+}
+footer .contact-info ul span {
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  footer .contact-info ul span {
+    margin-left: 10px;
+  }
+}
+footer .copyright {
+  border-top: 1px solid white;
+  padding-top: 32px;
+  margin-top: 32px;
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  footer .copyright {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+}
+footer .copyright span:first-child {
+  flex-grow: 1;
+}
+@media (max-width: 767px) {
+  footer .copyright span:first-child {
+    width: 100%;
+  }
+}
+footer .copyright span:not(:first-child) {
+  line-height: 21px;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  footer .copyright span:not(:first-child) {
+    width: 100%;
+  }
+}
+footer .copyright span:last-child {
+  margin-left: 48px;
+}
+@media (max-width: 767px) {
+  footer .copyright span:last-child {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 html,
