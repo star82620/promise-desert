@@ -1,3 +1,15 @@
-$primary-bg: #fbf2f2;
+@mixin pad {
+  @media (max-width: 1919px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+// color
+$bg-skin: #fbf2f2;
 $primary-red: #aa0601;
 $dark-red: #650300;
