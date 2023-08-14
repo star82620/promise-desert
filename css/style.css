@@ -182,6 +182,67 @@ footer .copyright span:last-child {
   margin-left: 48px;
 }
 
+.contact {
+  padding: 80px 0;
+  background: #fbf2f2;
+}
+.contact .contact-container {
+  max-width: 636px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact h2 {
+  font-size: 48px;
+  color: #650300;
+}
+.contact h2 + p {
+  margin-top: 48px;
+  line-height: 30px;
+  font-size: 20px;
+}
+.contact form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 16px;
+}
+.contact input,
+.contact textarea {
+  margin-top: 8px;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  text-indent: 12px;
+  border: 1px solid black;
+}
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+.contact textarea {
+  height: 136px;
+}
+.contact input {
+  height: 33px;
+}
+.contact .checkBox {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+}
+.contact .checkBox + span {
+  margin-left: 4px;
+}
+.contact button {
+  display: block;
+  padding: 16px 176px;
+  background-color: #aa0601;
+  color: white;
+  margin: 48px auto 0;
+}
+
 html,
 body {
   width: 100vw;
