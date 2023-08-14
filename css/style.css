@@ -317,6 +317,7 @@ button {
 
 .co-branding {
   background: url("../images/home/photot-cobranding-bg.png") no-repeat center center;
+  background-size: cover;
   text-align: center;
 }
 .co-branding h2 {
