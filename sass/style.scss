@@ -1,31 +1,24 @@
 @import "./reset";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 
-@mixin pad {
-  @media (max-width: 1919px) {
-    @content;
-  }
-}
-@mixin mobile {
-  @media (max-width: 767px) {
-    @content;
-  }
-}
-
-// color
-$bg-skin: #fbf2f2;
-$primary-red: #aa0601;
-$dark-red: #650300;
+@import "./common";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./variable.scss";
+@import "./contactForm.scss";
+@import "./feedback.scss";
+@import "./co-branding.scss";
 
 html,
 body {
   width: 100vw;
+  line-height: 24px;
 }
 
 .container {
   max-width: 1296px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 80px 0;
+  margin: auto;
 }
 
 header {
