@@ -156,14 +156,40 @@ button {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 1919px) {
+  .contact .contact-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .contact .contact-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
 .contact h2 {
   font-size: 48px;
+  font-weight: bold;
   color: #650300;
+}
+@media (max-width: 767px) {
+  .contact h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 .contact h2 + p {
   margin-top: 48px;
   line-height: 30px;
   font-size: 20px;
+}
+@media (max-width: 767px) {
+  .contact h2 + p {
+    margin-top: 24px;
+    font-style: 16px;
+    line-height: 24px;
+  }
 }
 .contact form {
   width: 100%;
@@ -205,6 +231,17 @@ button {
   background-color: #aa0601;
   color: white;
   margin: 48px auto 0;
+}
+@media (max-width: 1919px) {
+  .contact button {
+    padding: 16px 136px;
+  }
+}
+@media (max-width: 767px) {
+  .contact button {
+    margin: 24px auto 0;
+    width: 100%;
+  }
 }
 
 .feedback h2 {
@@ -422,6 +459,16 @@ body {
   max-width: 1296px;
   padding: 80px 0;
   margin: auto;
+}
+@media (max-width: 1919px) {
+  .container {
+    padding: 80px 36px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 40px 14px;
+  }
 }
 
 header {
