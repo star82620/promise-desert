@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+}
+
+html,
+body {
+  width: 100vw;
+}
+
+.container {
+  max-width: 1296px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+header {
+  width: 100%;
+  background-color: #aa0601;
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media (max-width: 1919px) {
+  .header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+h1 {
+  width: 80px;
+  height: 48px;
+  overflow: hidden;
+}
+h1 img {
+  width: 80px;
+}
+
+.nav {
+  display: flex;
+  gap: 0 64px;
+}
+@media (max-width: 767px) {
+  .nav {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.nav a {
+  color: #fff;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .nav a {
+    padding: 12px 0;
+    width: 50%;
+    border: 1px solid #fff;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 787px;
+  background: url("../images/home/home-header.png") no-repeat center center/cover;
+}
+@media (max-width: 1919px) {
+  .banner {
+    background: url("../images/home/home-header-sm.png") no-repeat center center/cover;
+  }
+}

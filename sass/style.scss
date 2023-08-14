@@ -1,0 +1,91 @@
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+
+@mixin pad {
+  @media (max-width: 1919px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+// color
+$bg-skin: #fbf2f2;
+$primary-red: #aa0601;
+$dark-red: #650300;
+
+html,
+body {
+  width: 100vw;
+}
+
+.container {
+  max-width: 1296px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+header {
+  width: 100%;
+  background-color: $primary-red;
+}
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include pad() {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+h1 {
+  width: 80px;
+  height: 48px;
+  overflow: hidden;
+
+  img {
+    width: 80px;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 0 64px;
+
+  @include mobile() {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  a {
+    color: #fff;
+    font-size: 20px;
+
+    @include mobile() {
+      padding: 12px 0;
+      width: 50%;
+      border: 1px solid #fff;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 787px;
+  background: url("../images/home/home-header.png") no-repeat center center /
+    cover;
+
+  @include pad() {
+    background: url("../images/home/home-header-sm.png") no-repeat center center /
+      cover;
+  }
+}
