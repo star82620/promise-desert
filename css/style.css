@@ -163,11 +163,22 @@ footer nav {
 footer nav a {
   color: white;
 }
+footer nav .icon {
+  margin-left: auto;
+  display: flex;
+  gap: 32px;
+}
 footer .contact-info {
   margin-top: 36px;
   line-height: 54px;
   font-size: 36px;
   gap: 8px;
+}
+footer .contact-info img {
+  vertical-align: middle;
+}
+footer .contact-info span {
+  margin-left: 20px;
 }
 footer .copyright {
   border-top: 1px solid white;

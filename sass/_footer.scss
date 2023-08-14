@@ -12,12 +12,23 @@ footer {
     a {
       color: white;
     }
+    .icon {
+      margin-left: auto;
+      display: flex;
+      gap: 32px;
+    }
   }
   .contact-info {
     margin-top: 36px;
     line-height: 54px;
     font-size: 36px;
     gap: 8px;
+    img {
+      vertical-align: middle;
+    }
+    span {
+      margin-left: 20px;
+    }
   }
   .copyright {
     border-top: 1px solid white;
