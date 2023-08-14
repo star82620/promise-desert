@@ -1,7 +1,11 @@
 footer {
+  .footer-container {
+    max-width: 1296px;
+    margin: auto;
+  }
   background-color: #aa0601;
   color: white;
-  padding: 60px 0 21px;
+  padding: 60px 0 20px;
   nav {
     display: flex;
     gap: 48px;
