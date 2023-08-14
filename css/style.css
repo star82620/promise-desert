@@ -150,7 +150,11 @@ button {
 footer {
   background-color: #aa0601;
   color: white;
-  padding: 60px 0 21px;
+  padding: 60px 0 20px;
+}
+footer .footer-container {
+  max-width: 1296px;
+  margin: auto;
 }
 footer nav {
   display: flex;
@@ -183,7 +187,6 @@ footer .copyright span:last-child {
 }
 
 .contact {
-  padding: 80px 0;
   background: #fbf2f2;
 }
 .contact .contact-container {
@@ -243,6 +246,45 @@ footer .copyright span:last-child {
   margin: 48px auto 0;
 }
 
+.feedback h2 {
+  line-height: 72px;
+  font-size: 48px;
+  color: #650300;
+  font-weight: bold;
+  text-align: center;
+}
+.feedback .cards {
+  margin-top: 48px;
+  display: flex;
+  gap: 24px;
+}
+.feedback .card {
+  border: 1px solid rgba(0, 0, 0, 0.1607843137);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 4px;
+  max-width: 306px;
+}
+.feedback .card img {
+  width: 100%;
+}
+.feedback .card .content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 205px;
+}
+.feedback .card p {
+  flex-grow: 1;
+  margin-top: 8px;
+}
+.feedback .card .date {
+  flex-grow: 0;
+  line-height: 21px;
+  font-size: 14px;
+  color: #707070;
+}
+
 html,
 body {
   width: 100vw;
@@ -251,8 +293,7 @@ body {
 
 .container {
   max-width: 1296px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 80px 0;
   margin: auto;
 }
 
