@@ -285,6 +285,35 @@ footer .copyright span:last-child {
   color: #707070;
 }
 
+.co-branding {
+  background: url("../images/home/photot-cobranding-bg.png") no-repeat center
+    center;
+  text-align: center;
+}
+.co-branding h2 {
+  color: white;
+  line-height: 72px;
+  font-size: 48px;
+}
+.co-branding .cards {
+  display: flex;
+  margin-top: 48px;
+}
+.co-branding .card {
+  background: white;
+}
+.co-branding .card img {
+  width: 100%;
+}
+.co-branding .card h3 {
+  margin: 8px 0;
+  color: #aa0601;
+  line-height: 72px;
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+}
+
 html,
 body {
   width: 100vw;

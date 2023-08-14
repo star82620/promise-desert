@@ -1,0 +1,29 @@
+.co-branding {
+  background: url("../images/home/photot-cobranding-bg.png") no-repeat center
+    center;
+
+  text-align: center;
+  h2 {
+    color: white;
+    line-height: 72px;
+    font-size: 48px;
+  }
+  .cards {
+    display: flex;
+    margin-top: 48px;
+  }
+  .card {
+    background: white;
+    img {
+      width: 100%;
+    }
+    h3 {
+      margin: 8px 0;
+      color: $primary-red;
+      line-height: 72px;
+      font-size: 48px;
+      font-weight: 900;
+      font-style: italic;
+    }
+  }
+}
