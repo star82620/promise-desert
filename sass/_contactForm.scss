@@ -1,0 +1,83 @@
+.contact {
+  background: $bg-skin;
+  .contact-container {
+    max-width: 636px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include pad() {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    @include mobile() {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: $dark-red;
+    @include mobile() {
+      font-size: 24px;
+      line-height: 36px;
+    }
+    & + p {
+      margin-top: 48px;
+      line-height: 30px;
+      font-size: 20px;
+      @include mobile() {
+        margin-top: 24px;
+        font-style: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 16px;
+  }
+  input,
+  textarea {
+    margin-top: 8px;
+    width: 100%;
+    background: transparent;
+    outline: none;
+    text-indent: 12px;
+    border: 1px solid black;
+    &::placeholder {
+      color: rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+  textarea {
+    height: 136px;
+  }
+  input {
+    height: 33px;
+  }
+  .checkBox {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    & + span {
+      margin-left: 4px;
+    }
+  }
+  button {
+    display: block;
+    padding: 16px 176px;
+    background-color: $primary-red;
+    color: white;
+    margin: 48px auto 0;
+    @include pad() {
+      padding: 16px 136px;
+    }
+    @include mobile() {
+      margin: 24px auto 0;
+      width: 100%;
+    }
+  }
+}
