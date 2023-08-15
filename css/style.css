@@ -165,7 +165,7 @@ body {
   }
 }
 
-.button {
+.btn {
   display: block;
   background-color: #aa0601;
   color: #fff;
@@ -339,8 +339,7 @@ body {
 }
 
 .co-branding {
-  background: url("../images/home/photot-cobranding-bg.png") no-repeat center
-    center;
+  background: url("../images/home/photot-cobranding-bg.png") no-repeat center center;
   background-size: cover;
   text-align: center;
 }
@@ -607,14 +606,12 @@ header {
   align-items: center;
   width: 100%;
   padding: 296px 0;
-  background: url("../images/home/home-header.png") no-repeat center
-    center/cover;
+  background: url("../images/home/home-header.png") no-repeat center center/cover;
   color: #650300;
 }
 @media (max-width: 992px) {
   .banner {
-    background: url("../images/home/home-header-sm.png") no-repeat center
-      center/cover;
+    background: url("../images/home/home-header-sm.png") no-repeat center center/cover;
   }
 }
 @media (max-width: 767px) {
@@ -657,7 +654,7 @@ header {
     font-size: 24px;
   }
 }
-.banner-content .button {
+.banner-content .btn {
   padding: 6px 12px;
   font-size: 20px;
   font-weight: 500;
@@ -697,7 +694,7 @@ header {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 306px;
+  max-width: 306px;
 }
 .feature-item img {
   max-width: 100px;
@@ -737,9 +734,16 @@ header {
   flex-wrap: wrap;
   gap: 24px;
 }
+.classic-container li {
+  text-align: center;
+}
 .classic-container img {
-  height: 416px;
-  width: auto;
+  max-width: 416px;
+}
+@media (max-width: 767px) {
+  .classic-container img {
+    width: 100%;
+  }
 }
 .classic-container p {
   font-size: 48px;
@@ -748,4 +752,9 @@ header {
   font-weight: 900;
   text-align: center;
   margin-top: 8px;
+}
+@media (max-width: 767px) {
+  .classic-container p {
+    font-size: 42px;
+  }
 }
