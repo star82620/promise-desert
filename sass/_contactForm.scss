@@ -5,14 +5,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include pad() {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    @include mobile() {
+      padding-left: 14px;
+      padding-right: 14px;
+    }
   }
   h2 {
     font-size: 48px;
+    font-weight: bold;
     color: $dark-red;
+    @include mobile() {
+      font-size: 24px;
+      line-height: 36px;
+    }
     & + p {
       margin-top: 48px;
       line-height: 30px;
       font-size: 20px;
+      @include mobile() {
+        margin-top: 24px;
+        font-style: 16px;
+        line-height: 24px;
+      }
     }
   }
   form {
@@ -54,5 +72,12 @@
     background-color: $primary-red;
     color: white;
     margin: 48px auto 0;
+    @include pad() {
+      padding: 16px 136px;
+    }
+    @include mobile() {
+      margin: 24px auto 0;
+      width: 100%;
+    }
   }
 }

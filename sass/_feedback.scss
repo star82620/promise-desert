@@ -5,18 +5,38 @@
     color: $dark-red;
     font-weight: bold;
     text-align: center;
+    @include mobile {
+      line-height: 36px;
+      font-size: 24px;
+    }
   }
   .cards {
     margin-top: 48px;
     display: flex;
-    // align-items: stretch;
     gap: 24px;
+    display: flex;
+    @include pad {
+      margin-top: 48px;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+    }
+    @include mobile {
+      margin-top: 24px;
+      gap: 16px;
+    }
   }
   .card {
     border: 1px solid #00000029;
     box-shadow: 0px 2px 6px #00000029;
     border-radius: 4px;
     max-width: 306px;
+    @include pad {
+      max-width: 45%;
+    }
+    @include mobile {
+      max-width: 100%;
+    }
     img {
       width: 100%;
     }

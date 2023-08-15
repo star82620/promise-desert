@@ -171,45 +171,6 @@ body {
   color: #fff;
 }
 
-footer {
-  background-color: #aa0601;
-  color: white;
-  padding: 60px 0 20px;
-}
-footer .footer-container {
-  max-width: 1296px;
-  margin: auto;
-}
-footer nav {
-  display: flex;
-  gap: 48px;
-}
-footer nav a {
-  color: white;
-}
-footer .contact-info {
-  margin-top: 36px;
-  line-height: 54px;
-  font-size: 36px;
-  gap: 8px;
-}
-footer .copyright {
-  border-top: 1px solid white;
-  padding-top: 32px;
-  margin-top: 32px;
-  display: flex;
-}
-footer .copyright span:first-child {
-  flex-grow: 1;
-}
-footer .copyright span:not(:first-child) {
-  line-height: 21px;
-  font-size: 14px;
-}
-footer .copyright span:last-child {
-  margin-left: 48px;
-}
-
 .contact {
   background: #fbf2f2;
 }
@@ -219,14 +180,40 @@ footer .copyright span:last-child {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 992px) {
+  .contact .contact-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .contact .contact-container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
 .contact h2 {
   font-size: 48px;
+  font-weight: bold;
   color: #650300;
+}
+@media (max-width: 767px) {
+  .contact h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
 }
 .contact h2 + p {
   margin-top: 48px;
   line-height: 30px;
   font-size: 20px;
+}
+@media (max-width: 767px) {
+  .contact h2 + p {
+    margin-top: 24px;
+    font-style: 16px;
+    line-height: 24px;
+  }
 }
 .contact form {
   width: 100%;
@@ -269,6 +256,17 @@ footer .copyright span:last-child {
   color: white;
   margin: 48px auto 0;
 }
+@media (max-width: 992px) {
+  .contact button {
+    padding: 16px 136px;
+  }
+}
+@media (max-width: 767px) {
+  .contact button {
+    margin: 24px auto 0;
+    width: 100%;
+  }
+}
 
 .feedback h2 {
   line-height: 72px;
@@ -277,16 +275,47 @@ footer .copyright span:last-child {
   font-weight: bold;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .feedback h2 {
+    line-height: 36px;
+    font-size: 24px;
+  }
+}
 .feedback .cards {
   margin-top: 48px;
   display: flex;
   gap: 24px;
+  display: flex;
+}
+@media (max-width: 992px) {
+  .feedback .cards {
+    margin-top: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .feedback .cards {
+    margin-top: 24px;
+    gap: 16px;
+  }
 }
 .feedback .card {
   border: 1px solid rgba(0, 0, 0, 0.1607843137);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1607843137);
   border-radius: 4px;
   max-width: 306px;
+}
+@media (max-width: 992px) {
+  .feedback .card {
+    max-width: 45%;
+  }
+}
+@media (max-width: 767px) {
+  .feedback .card {
+    max-width: 100%;
+  }
 }
 .feedback .card img {
   width: 100%;
@@ -310,7 +339,9 @@ footer .copyright span:last-child {
 }
 
 .co-branding {
-  background: url("../images/home/photot-cobranding-bg.png") no-repeat center center;
+  background: url("../images/home/photot-cobranding-bg.png") no-repeat center
+    center;
+  background-size: cover;
   text-align: center;
 }
 .co-branding h2 {
@@ -318,12 +349,34 @@ footer .copyright span:last-child {
   line-height: 72px;
   font-size: 48px;
 }
+@media (max-width: 767px) {
+  .co-branding h2 {
+    line-height: 36px;
+    font-size: 24px;
+  }
+}
 .co-branding .cards {
   display: flex;
   margin-top: 48px;
 }
+@media (max-width: 992px) {
+  .co-branding .cards {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .co-branding .cards {
+    margin-top: 24px;
+  }
+}
 .co-branding .card {
   background: white;
+}
+@media (max-width: 992px) {
+  .co-branding .card {
+    width: 100%;
+  }
 }
 .co-branding .card img {
   width: 100%;
@@ -335,6 +388,143 @@ footer .copyright span:last-child {
   font-size: 48px;
   font-weight: 900;
   font-style: italic;
+}
+
+footer {
+  background-color: #aa0601;
+  color: white;
+  padding: 60px 0 32px;
+}
+footer .footer-container {
+  max-width: 1296px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  footer {
+    padding: 60px 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 24px 14px;
+  }
+}
+footer nav ul {
+  display: flex;
+  gap: 48px;
+  line-height: 48px;
+}
+@media (max-width: 992px) {
+  footer nav ul {
+    line-height: 40px;
+  }
+}
+@media (max-width: 767px) {
+  footer nav ul {
+    display: none;
+  }
+}
+footer nav ul a {
+  color: white;
+}
+footer .icon {
+  margin-left: auto;
+  display: flex;
+  gap: 32px;
+}
+@media (max-width: 767px) {
+  footer .icon {
+    gap: 16px;
+  }
+}
+footer .icon img {
+  width: 48px;
+}
+@media (max-width: 992px) {
+  footer .icon img {
+    width: 40px;
+  }
+}
+@media (max-width: 767px) {
+  footer .icon img {
+    width: 24px;
+  }
+}
+footer .contact-info ul {
+  margin-top: 36px;
+  line-height: 54px;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media (max-width: 767px) {
+  footer .contact-info ul {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 0;
+    gap: 8px;
+  }
+}
+footer .contact-info ul img {
+  vertical-align: middle;
+  width: 40px;
+}
+@media (max-width: 767px) {
+  footer .contact-info ul img {
+    width: 16px;
+  }
+}
+footer .contact-info ul span {
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  footer .contact-info ul span {
+    margin-left: 10px;
+  }
+}
+footer .copyright {
+  border-top: 1px solid white;
+  padding-top: 32px;
+  margin-top: 32px;
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  footer .copyright {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 16px;
+    margin-top: 16px;
+  }
+}
+footer .copyright span:first-child {
+  flex-grow: 1;
+}
+@media (max-width: 767px) {
+  footer .copyright span:first-child {
+    width: 100%;
+  }
+}
+footer .copyright span:not(:first-child) {
+  line-height: 21px;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  footer .copyright span:not(:first-child) {
+    width: 100%;
+  }
+}
+footer .copyright span:last-child {
+  margin-left: 48px;
+}
+@media (max-width: 767px) {
+  footer .copyright span:last-child {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 header {
@@ -417,12 +607,14 @@ header {
   align-items: center;
   width: 100%;
   padding: 296px 0;
-  background: url("../images/home/home-header.png") no-repeat center center/cover;
+  background: url("../images/home/home-header.png") no-repeat center
+    center/cover;
   color: #650300;
 }
 @media (max-width: 992px) {
   .banner {
-    background: url("../images/home/home-header-sm.png") no-repeat center center/cover;
+    background: url("../images/home/home-header-sm.png") no-repeat center
+      center/cover;
   }
 }
 @media (max-width: 767px) {
