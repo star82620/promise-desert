@@ -1,31 +1,13 @@
 @import "./reset";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
 
+@import "./variable.scss";
 @import "./common";
 @import "./header.scss";
-@import "./variable.scss";
+
 @import "./contactForm.scss";
 @import "./feedback.scss";
 @import "./co-branding.scss";
 @import "./footer.scss";
-
-html,
-body {
-  width: 100vw;
-  line-height: 24px;
-}
-
-.container {
-  max-width: 1296px;
-  padding: 80px 0;
-  margin: auto;
-  @include pad() {
-    padding: 80px 36px;
-  }
-  @include mobile() {
-    padding: 40px 14px;
-  }
-}
 
 header {
   width: 100%;
@@ -37,22 +19,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 36px;
 
   @include pad() {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 36px;
   }
-}
 
-h1 {
-  width: 80px;
-  height: 48px;
-  overflow: hidden;
+  @include mobile() {
+    padding: 12px 0 12px 15px;
+  }
 
-  img {
+  h1 {
     width: 80px;
+    height: 48px;
+    overflow: hidden;
+
+    img {
+      width: 80px;
+    }
   }
 }
 
@@ -61,30 +45,205 @@ h1 {
   gap: 0 64px;
 
   @include mobile() {
+    display: none;
+  }
+}
+.nav a,
+.nav-mobile a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.nav-mobile {
+  display: none;
+
+  @include mobile() {
+    display: flex;
     width: 100%;
     flex-wrap: wrap;
+    gap: 0;
   }
 
+  li {
+    width: 50%;
+  }
   a {
-    color: #fff;
-    font-size: 20px;
-
     @include mobile() {
+      display: block;
+      width: 100%;
       padding: 12px 0;
-      width: 50%;
       border: 1px solid #fff;
+      text-align: center;
+
+      &:nth-child(odd) {
+        border-right: 0px;
+      }
     }
   }
 }
 
 .banner {
+  display: flex;
+  justify-content: end;
+  align-items: center;
   width: 100%;
-  height: 787px;
+  padding: 296px 0;
   background: url("../images/home/home-header.png") no-repeat center center /
     cover;
+  color: $dark-red;
 
   @include pad() {
     background: url("../images/home/home-header-sm.png") no-repeat center center /
       cover;
+  }
+
+  @include mobile() {
+    height: 396px;
+    padding: 144px 0;
+  }
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 16%;
+
+  @include pad() {
+    margin-right: 36px;
+  }
+
+  @include mobile() {
+    margin-right: 16px;
+  }
+
+  h2 {
+    font-size: 36px;
+
+    @include mobile() {
+      font-size: 16px;
+    }
+  }
+
+  p {
+    font-size: 64px;
+    font-weight: bold;
+
+    @include mobile() {
+      font-size: 24px;
+    }
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+.feature {
+  background-color: $bg-skin;
+
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px 0;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: $dark-red;
+
+    @include mobile() {
+      font-size: 24px;
+    }
+  }
+}
+
+.feature-lists {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 306px;
+
+  img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: $dark-red;
+    margin-top: 16px;
+  }
+
+  p {
+    margin-top: 8px;
+  }
+}
+
+.classic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px 0;
+
+  h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: $dark-red;
+
+    @include mobile() {
+      font-size: 24px;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  li {
+    text-align: center;
+  }
+
+  img {
+    max-width: 416px;
+    // width: auto;
+
+    @include mobile() {
+      // max-height: 348px;
+      width: 100%;
+    }
+  }
+
+  p {
+    font-size: 48px;
+    color: $primary-red;
+    font-style: italic;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 8px;
+
+    @include mobile() {
+      font-size: 42px;
+    }
   }
 }
